@@ -32,7 +32,7 @@ body {
 .navbar {
   font-family: "Cinzel", serif;
   position: fixed;
-  width: 100%;
+  width: 100vw;
 }
 .navigation-buttons {
   display: grid;
@@ -84,19 +84,16 @@ h4 {
 @media screen and (max-width: 1000px) {
   .navigation-buttons {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    place-items: center;
+    grid-template-columns: 0fr 1fr 1fr 1fr;
   }
+}
+@media screen and (max-width: 900px) {
 }
 @media screen and (max-width: 800px) {
   .navigation-buttons {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-  }
-}
-@media screen and (max-width: 800px) {
-  .navigation-buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
   }
   h1 {
     font-size: 3em;
@@ -112,9 +109,6 @@ h4 {
   h1 {
     font-size: 2.5em;
   }
-  /* .header-button {
-    margin-top: 1em;
-  } */
 }
 @media screen and (max-width: 425px) {
   h1 {
