@@ -1,0 +1,126 @@
+body {
+  background: linear-gradient(
+    to right,
+    #a8dbe6 0%,
+    #d2f3f9 25%,
+    #b9e3ef 50%,
+    #f1f8fe 75%,
+    #a8dbe6 100%
+  );
+  background-size: 200% 100%;
+  animation: gradientChange 9s infinite; /* 3 sekunder per varv, oändligt antal varv */
+  padding: 0em;
+  margin: 0em;
+  overflow-y: hidden;
+}
+.start-section,
+#about-me,
+#project-section,
+#cv {
+  height: 100vh;
+}
+
+@keyframes gradientChange {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.navbar {
+  font-family: "Cinzel", serif;
+  position: fixed;
+  width: 100%;
+}
+.navigation-buttons {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr;
+  place-items: end;
+  place-items: center;
+  padding: 1em;
+  /* background-color: #a8dbe6; */
+}
+
+.header-button {
+  background-color: transparent;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  position: relative;
+  top: 0.1em;
+  margin-top: 1em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.header-button:hover {
+  top: -0.1em;
+  transition: all 0.2s ease-in-out;
+}
+
+main {
+  font-family: "Junge", cursive;
+}
+
+.start-section {
+  display: grid;
+  place-items: center;
+}
+.start-section > div {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+h4 {
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .navigation-buttons {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navigation-buttons {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navigation-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navigation-buttons {
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr 1fr;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  /* .header-button {
+    margin-top: 1em;
+  } */
+}
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 0.8em;
+  }
+}

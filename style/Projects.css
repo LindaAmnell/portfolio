@@ -1,0 +1,52 @@
+h3 {
+  margin-bottom: 3em;
+}
+#project-section {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  grid-gap: 3em;
+  padding: 0em 3em 0em 3em;
+}
+.project-hangman,
+.project-pokemon,
+.project-better-webb {
+  background-color: white;
+  padding: 2em;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 2fr 0.5fr;
+  border-radius: 2em;
+  box-shadow: 0.3em 0.6em 0.4em -0.1em #a8dbe6;
+  min-height: 25em;
+  width: 20em;
+}
+.project-hangman > p,
+.project-better-webb > p {
+  margin-bottom: 2.4em;
+}
+
+.hangman {
+  width: 60%;
+  border-radius: 1em;
+}
+.pokemon {
+  width: 55%;
+  border-radius: 1em;
+  border: solid 0.1em black;
+}
+.better-webb {
+  width: 80%;
+  border-radius: 1em;
+}
+.alink:hover {
+  text-decoration: underline;
+}
