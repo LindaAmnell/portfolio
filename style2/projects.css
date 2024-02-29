@@ -1,0 +1,57 @@
+h3 {
+}
+#project-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  grid-gap: 1em;
+  padding: 0em 1em 0em 1em;
+}
+.project-hangman,
+.project-pokemon,
+.project-better-webb {
+  background-color: white;
+  box-shadow: 0.3em 0.6em 0.4em -0.1em #a8dbe6;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 1em;
+  min-height: 12em;
+  place-items: center;
+}
+.project-hangman > p,
+.project-better-webb > p {
+  /* margin-bottom: 2.4em; */
+}
+
+.hangman {
+  border-radius: 1em;
+  width: 30%;
+  margin: 1em;
+}
+.pokemon {
+  border-radius: 1em;
+  border: solid 0.1em black;
+  width: 30%;
+  margin: 1em;
+}
+.better-webb {
+  border-radius: 1em;
+  width: 30%;
+  margin: 1em;
+}
+.alink:hover {
+  text-decoration: underline;
+}
+.info-text {
+  display: grid;
+  place-items: start;
+}

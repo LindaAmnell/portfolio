@@ -1,0 +1,77 @@
+body {
+  background: linear-gradient(
+    to right,
+    #a8dbe6 0%,
+    #d2f3f9 25%,
+    #b9e3ef 50%,
+    #f1f8fe 75%,
+    #a8dbe6 100%
+  );
+  background-size: 200% 100%;
+  animation: gradientChange 9s infinite; /* 3 sekunder per varv, oändligt antal varv */
+  padding: 0em;
+  margin: 0em;
+  overflow-y: hidden;
+}
+.start-section,
+#about-me,
+#project-section,
+#cv {
+  height: 100vh;
+}
+
+@keyframes gradientChange {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+.navbar {
+  font-family: "Cinzel", serif;
+  width: 100vw;
+  position: fixed;
+}
+.navigation-buttons {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 0fr 1fr 1fr 1fr;
+}
+.header-button {
+  background-color: transparent;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  position: relative;
+  top: 0.1em;
+  margin-top: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.header-button:hover {
+  top: -0.1em;
+  transition: all 0.2s ease-in-out;
+}
+
+main {
+  font-family: "Junge", cursive;
+}
+.start-section {
+  display: grid;
+  place-items: center;
+}
+.start-section > div {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+}
+h4 {
+  margin: 0;
+  font-size: 13px;
+}
