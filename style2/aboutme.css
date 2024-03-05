@@ -22,3 +22,8 @@
 h5 {
   margin-top: 0em;
 }
+@media (min-width: 600px) {
+  .me-bilbo {
+    width: 30%;
+  }
+}

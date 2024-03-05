@@ -55,3 +55,14 @@ h3 {
   display: grid;
   place-items: start;
 }
+@media (min-width: 600px) {
+  .hangman {
+    width: 20%;
+  }
+  .pokemon {
+    width: 20%;
+  }
+  .better-webb {
+    width: 25%;
+  }
+}
